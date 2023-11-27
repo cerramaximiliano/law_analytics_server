@@ -12,7 +12,6 @@ dotenv.config();
         db.once('open', async () => {
             const app = server.listen(process.env.PORT || 3000, async () => {
             console.log(`Server listen on PORT ${app.address().port}`);
-            const tasks = require('./server/tasks/tasasUpdateTasks');
         });
         });
     }catch(err){

@@ -20,6 +20,7 @@ mongoose.set('strictQuery', false);
     });
     collections.Users = db.collection('usuarios');
     collections.Tasas = db.collection('tasas');
+    collections.Localidades = db.collection('localidades');
 
 module.exports = {db, collections};
 
